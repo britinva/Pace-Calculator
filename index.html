@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A simple pace calculator.">
+	<meta name="author" content="Chris J. Harrison">
+	<title>Pace Calculator</title>
+
+	<link href='css/pace.css' rel='stylesheet' type='text/css'>	
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<form>
+		<h1>Pace Calculator</h1>
+		<p>
+			<label for="raceDistance">Race Distance</label>
+
+			<select id="raceDistance">
+				<option value="3.11">5k</option>
+				<option value="4.97">8k</option>
+				<option value="6.21">10k</option>
+				<option value="7.45">12k</option>
+				<option value="9.32">15k</option>
+				<option value="10">10 miles</option>
+				<option value="12.43">20k</option>
+				<option value="13.1">Half Marathon</option>
+				<option value="15.53">25k</option>
+				<option value="18.64">30k</option>
+				<option value="26.2">Marathon</option>
+				<option value="62.14">100k</option>
+			</select>
+		</p>
+		<p>
+			<label for="goalTime">Goal Time</label>
+			<input type="text" id="goalTime" placeholder="hh:mm:ss or mm:ss" />
+		</p>
+		<p style="text-align: center">
+			<span id="btnCalculate">Calculate Pace</span>
+		</p>
+		<p style="text-align: center">
+			<span id="result">
+			</span>
+		</p>
+	</form>
+	<script src="js/pace.js" type="text/javascript"></script>
+</body>
+</html>

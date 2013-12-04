@@ -1,0 +1,99 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	background: url(../img/bg-phone.jpg) top center no-repeat fixed;
+	background-size: cover;
+}
+
+body {
+	font-family: 'PT Sans';
+	font-size: 1.4em;
+	line-height: 1.25em;
+	color: #fff;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1em;
+	text-align: center;
+}
+
+form {
+	width: 90%;
+	padding: 1em;
+	background: rgba(0,0,0,.8);
+	margin: 50px auto;
+}
+
+form p {
+	overflow: hidden;
+}
+
+form label {
+	display: block;
+}
+
+input[type=text], select {
+	border: none;
+	border-radius: 5px;
+	background: #eee;
+	height: 2.5em;
+	font-size: 1rem;
+	vertical-align: middle;
+	width: 100%;
+}
+
+#btnCalculate {
+	display: inline-block;
+	background-color: #666;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+#btnCalculate:hover,
+#btnCalculate:active,
+#btnCalculate:focus {
+	background-color: #8e2432;
+}
+
+strong {
+	font-size: 1.5em;
+}
+
+@media screen and (min-width: 35em) {
+	html {
+		background: url(../img/bg-tablet.jpg) top center no-repeat fixed;
+		background-size: cover;
+	}
+
+	body {
+		font-size: 1.4em;
+	}
+
+	form {
+		width: 60%;
+		margin-top: 200px;
+		padding: .5em;
+	}
+	
+	form label {
+		display: inline-block;
+		text-align: right;
+		width: 40%;
+	}
+	
+	input[type=text], select {
+		width: auto;
+	}
+}		
+
+@media screen and (min-width: 50em) {
+	html {
+		background: url(../img/bg-desktop.jpg) top center no-repeat fixed;
+		background-size: cover;
+	}
+}
